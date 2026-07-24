@@ -78,7 +78,9 @@ jobs:
 
       - name: Install dependencies
         # postgres is needed so the SQL cache adapter tests run instead of skipping.
-        run: uv sync --extra dev --extra postgres
+        # unstructured-transform is needed so the mocked Transform loader tests
+        # run instead of skipping.
+        run: uv sync --extra dev --extra postgres --extra unstructured-transform
 
       - name: Run mocked unit tests
         run: |
@@ -106,6 +108,7 @@ jobs:
             cognee/tests/unit/infrastructure/databases/test_unified_store_engine.py \
             cognee/tests/unit/infrastructure/session/ \
             cognee/tests/unit/infrastructure/llm/ \
+            cognee/tests/unit/infrastructure/loaders/ \
             cognee/tests/unit/infrastructure/test_rate_limiting_retry.py \
             cognee/tests/unit/tasks/storage/test_add_data_points.py \
             cognee/tests/unit/shared/ \

@@ -50,6 +50,7 @@ pre-commit install
 - **baml** - BAML structured output
 - **dlt** - Data load tool (dlt) integration
 - **docling** - Docling document processing
+- **unstructured-transform** - Hosted document partitioning via the Unstructured Transform API (activates when `UNSTRUCTURED_TRANSFORM_API_KEY` is set)
 - **codegraph** - Code graph extraction
 - **evals** - Evaluation tools
 - **deepeval** - DeepEval testing framework

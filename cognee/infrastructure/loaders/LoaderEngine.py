@@ -31,6 +31,10 @@ class LoaderEngine:
 
         self.default_loader_priority = [
             "text_loader",
+            # Hosted partitioning; only matches when an API key is configured
+            # (its can_handle returns False otherwise), so with no key the
+            # local loaders below behave exactly as before.
+            "unstructured_transform_loader",
             "pypdf_loader",
             "image_loader",
             "audio_loader",

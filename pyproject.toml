@@ -198,6 +198,7 @@ tracing = [
 ]
 
 docling = ["docling>=2.54", "transformers>=4.55"]
+unstructured-transform = ["unstructured-client>=0.42.0,<1"]
 
 [project.urls]
 Homepage = "https://www.cognee.ai"

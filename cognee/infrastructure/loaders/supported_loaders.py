@@ -46,3 +46,10 @@ try:
     supported_loaders[DoclingLoader.loader_name] = DoclingLoader
 except ImportError:
     pass
+
+try:
+    from cognee.infrastructure.loaders.external import UnstructuredTransformLoader
+
+    supported_loaders[UnstructuredTransformLoader.loader_name] = UnstructuredTransformLoader
+except ImportError:
+    pass

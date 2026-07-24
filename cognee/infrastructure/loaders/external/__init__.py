@@ -41,3 +41,10 @@ try:
     __all__.append("DoclingLoader")
 except ImportError:
     pass
+
+try:
+    from .unstructured_transform_loader import UnstructuredTransformLoader
+
+    __all__.append("UnstructuredTransformLoader")
+except ImportError:
+    pass
