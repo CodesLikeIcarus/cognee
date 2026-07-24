@@ -80,7 +80,7 @@ jobs:
         # postgres is needed so the SQL cache adapter tests run instead of skipping.
         # unstructured-transform is needed so the mocked Transform loader tests
         # run instead of skipping.
-        run: uv sync --extra dev --extra postgres --extra unstructured-transform
+        run: uv sync --extra dev --extra postgres --extra unstructured-transform --extra unstructured-transform-mcp
 
       - name: Run mocked unit tests
         run: |

@@ -35,6 +35,7 @@ class LoaderEngine:
             # (its can_handle returns False otherwise), so with no key the
             # local loaders below behave exactly as before.
             "unstructured_transform_loader",
+            "unstructured_transform_mcp_loader",
             "pypdf_loader",
             "image_loader",
             "audio_loader",

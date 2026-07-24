@@ -46,6 +46,7 @@ TERMINAL_JOB_STATUSES = (JobStatus.COMPLETED, JobStatus.FAILED, JobStatus.STOPPE
 class UnstructuredTransformSettings(BaseSettings):
     unstructured_transform_api_key: Optional[str] = None
     unstructured_transform_api_url: str = "https://platform-api.transform.unstructured.io"
+    unstructured_transform_mcp_url: str = "https://mcp.transform.unstructured.io"
 
     model_config = SettingsConfigDict(env_file=".env", extra="allow")
 

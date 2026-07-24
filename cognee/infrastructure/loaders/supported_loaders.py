@@ -53,3 +53,10 @@ try:
     supported_loaders[UnstructuredTransformLoader.loader_name] = UnstructuredTransformLoader
 except ImportError:
     pass
+
+try:
+    from cognee.infrastructure.loaders.external import UnstructuredTransformMcpLoader
+
+    supported_loaders[UnstructuredTransformMcpLoader.loader_name] = UnstructuredTransformMcpLoader
+except ImportError:
+    pass

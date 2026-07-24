@@ -51,6 +51,7 @@ pre-commit install
 - **dlt** - Data load tool (dlt) integration
 - **docling** - Docling document processing
 - **unstructured-transform** - Hosted document partitioning via the Unstructured Transform API (activates when `UNSTRUCTURED_TRANSFORM_API_KEY` is set)
+- **unstructured-transform-mcp** - Same hosted partitioning spoken over the Transform MCP server (also gated on `UNSTRUCTURED_TRANSFORM_API_KEY`)
 - **codegraph** - Code graph extraction
 - **evals** - Evaluation tools
 - **deepeval** - DeepEval testing framework

@@ -48,3 +48,10 @@ try:
     __all__.append("UnstructuredTransformLoader")
 except ImportError:
     pass
+
+try:
+    from .unstructured_transform_mcp_loader import UnstructuredTransformMcpLoader
+
+    __all__.append("UnstructuredTransformMcpLoader")
+except ImportError:
+    pass
